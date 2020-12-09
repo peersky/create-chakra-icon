@@ -1,5 +1,5 @@
 {
-  "name": "@humanitix/create-chakra-icon",
+  "name": "create-chakra-icon",
   "version": "0.2.0",
   "description": "convert one or multiple svg files into a Chakra UI (React) Icon component",
   "main": "index.js",

@@ -23,6 +23,7 @@ const cleanAtrributes = ($el, $) => {
   forEach(attrs, (attr) => {
     $el.removeAttr(attr)
   })
+
   if ($el.children().length === 0) {
     return false
   }
@@ -32,18 +33,17 @@ const cleanAtrributes = ($el, $) => {
   })
 }
 
-const createComponentString = (viewBox, iconSvg, name) => {
-  return `import React from 'react'
-import Icon from 'react-icon-base'
+const createComponentString = (viewBox, iconSvg, id) => {
+  const name = titleize(id).replace(/[-]/g, '');
 
-export default (props) => {
-  return (
-    <Icon viewBox='${viewBox}' {...props}>
-      <title>{props.title || '${titleize(name)}'}</title>
-      <g>${iconSvg}</g>
-    </Icon>
-  )
-}
+  return `import React from 'react';
+import { Icon } from '@chakra-ui/react';
+
+export const ${name} = (props) => (
+  <Icon viewBox="${viewBox}" {...props}>
+    ${iconSvg}
+  </Icon>
+);
 `
 }
 
@@ -57,7 +57,8 @@ mkdirp(distDir, (err) => {
       xmlMode: true
     })
     const $svg = $('svg')
-    cleanAtrributes($svg, $)
+    // disable cleanAtrributes in favour of svg source optimisation step i.e. svgo
+    // cleanAtrributes($svg, $)
     const iconSvg = $svg.html()
     const viewBox = $svg.attr('viewBox')
     const componentString = createComponentString(viewBox, iconSvg, id)

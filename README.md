@@ -1,24 +1,21 @@
-# create-react-icon
+# create-chakra-icon
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Downloads][downloads-image]][downloads-url]
-[![js-standard-style][standard-image]][standard-url]
 
-Convert one or multiple svg files into inline-svg React component, inspired by [react-icons](https://github.com/gorangajic/react-icons) project.
+Convert one or multiple svg files into inline-svg Chakra UI (React) Icon component. Forked from [create-react-icon](https://github.com/envato/create-react-icon) that is inspired by [react-icons](https://github.com/gorangajic/react-icons) project.
 
 If you are wondering what the benefit is to use inline svg in React component, please check this post [Creating an SVG Icon System with React](https://css-tricks.com/creating-svg-icon-system-react/).
 
 ## Installation
 
 ```sh
-$ npm install create-react-icon -g
+$ npm i -g create-chakra-icon
 ```
 
 ## Usage
 
 ```sh
-$ create-react-icon ./alert.svg dist
-$ create-react-icon ./*.svg dist
+$ create-chakra-icon ./alert.svg dist
+$ create-chakra-icon ./*.svg dist
 ```
 
 ## Result
@@ -34,7 +31,7 @@ Becomes to :
 
 ```js
 import React from 'react'
-import Icon from 'react-icon-base'
+import { Icon } from '@chakra-ui/react'
 
 export default (props) => {
   return (
@@ -58,19 +55,12 @@ export default (props) => {
 }
 ```
 
-## Roadmap
-
-* Make the base component configurable
-
 ## License
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/create-react-icon.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/create-react-icon
-[travis-image]: https://img.shields.io/travis/envato/create-react-icon/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/envato/create-react-icon
-[downloads-image]: http://img.shields.io/npm/dm/create-react-icon.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/create-react-icon
-[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
-[standard-url]: https://github.com/feross/standard
+[npm-image]: https://img.shields.io/npm/v/create-chakra-icon.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/create-chakra-icon
+[downloads-image]: http://img.shields.io/npm/dm/create-chakra-icon.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/create-chakra-icon
+

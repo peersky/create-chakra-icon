@@ -1,29 +1,30 @@
 {
-  "name": "create-react-icon",
+  "name": "@humanitix/create-chakra-icon",
   "version": "0.2.0",
-  "description": "convert one or multiple svg files into React component",
+  "description": "convert one or multiple svg files into a Chakra UI (React) Icon component",
   "main": "index.js",
   "scripts": {
     "test": "standard"
   },
   "bin": {
-    "create-react-icon": "index.js"
+    "create-chakra-icon": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/envato/create-react-icon.git"
+    "url": "git+https://github.com/skinread/create-chakra-icon.git"
   },
   "keywords": [
     "svg",
+    "chakra-ui",
     "react",
     "icon"
   ],
-  "author": "Envato Foundation",
+  "author": "Sean Knrd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/envato/create-react-icon/issues"
+    "url": "https://github.com/skinread/create-chakra-icon/issues"
   },
-  "homepage": "https://github.com/envato/create-react-icon#readme",
+  "homepage": "https://github.com/skinread/create-chakra-icon#readme",
   "dependencies": {
     "camelcase": "^5.0.0",
     "cheerio": "^0.22.0",

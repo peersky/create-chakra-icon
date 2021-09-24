@@ -1,7 +1,5 @@
 # create-chakra-icon
 
-[![NPM version][npm-image]][npm-url]
-
 Convert one or multiple svg files into inline-svg Chakra UI (React) Icon component. With colors being red from style fill properties.
 Forked from [create-chakra-icon](https://github.com/skinread/create-chakra-icon) that is inspired by [react-icons](https://github.com/gorangajic/react-icons) project.
 
